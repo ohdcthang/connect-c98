@@ -81,7 +81,7 @@ class Coin98Client extends EventEmitter {
         queueUrl: queueUrl,
         messageAttributeNames: ['All'],
         sqs: sqsClient,
-        visibilityTimeout: 0,
+        visibilityTimeout: 0, 
         // waitTimeSeconds: 0,
         handleMessage: async (message) => {
           const { MessageAttributes } = message
